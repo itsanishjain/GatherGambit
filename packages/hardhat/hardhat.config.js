@@ -24,7 +24,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "mumbai";
 
 function mnemonic() {
   try {
@@ -321,6 +321,7 @@ module.exports = {
       rinkeby: "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW",
       ropsten: "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW",
       sepolia: "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW",
+      polygonMumbai: process.env.polygonScanner,
       // add other network's API key here
     },
   },

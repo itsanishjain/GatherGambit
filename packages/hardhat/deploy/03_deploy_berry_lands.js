@@ -28,6 +28,11 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
     // waitConfirmations: 5,
   });
 
+  // const BerryLands = await ethers.getContractAt("BerryLands", deployer);
+  // await BerryLands.transferOwnership(
+  //   "0x34524f2BBe9C28b2D3b0ed1E822c0BE9Cf35De85"
+  // );
+
   // Getting a previously deployed contract
   // const YourContract = await ethers.getContract("YourContract", deployer);
   /*  await YourContract.setPurpose("Hello");
