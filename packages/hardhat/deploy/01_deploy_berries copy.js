@@ -25,8 +25,15 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
     // waitConfirmations: 5,
   });
 
-  const Berries = await ethers.getContractAt("Berries", deployer);
-  await Berries.transferOwnership("0x34524f2BBe9C28b2D3b0ed1E822c0BE9Cf35De85");
+  // const Berries = await ethers.getContractAt("Berries", deployer);
+  // console.log(
+  //   "================================",
+  //   Berries.address,
+  //   "================================",
+  //   "DEPLOYER",
+  //   deployer
+  // );
+  // await Berries.transferOwnership("0x34524f2BBe9C28b2D3b0ed1E822c0BE9Cf35De85");
 
   // Getting a previously deployed contract
   // const YourContract = await ethers.getContract("YourContract", deployer);

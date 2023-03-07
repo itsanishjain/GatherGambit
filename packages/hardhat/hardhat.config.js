@@ -139,9 +139,10 @@ module.exports = {
     },
     mumbai: {
       url: "https://rpc-mumbai.maticvigil.com",
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      // accounts: {
+      //   mnemonic: mnemonic(),
+      // },
+      accounts: [process.env.fantom_PK],
     },
     matic: {
       url: "https://rpc-mainnet.maticvigil.com/",

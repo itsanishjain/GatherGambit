@@ -20,6 +20,8 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
   const Berries = await ethers.getContract("Berries", deployer);
   const GatherGambit = await ethers.getContract("GatherGambit", deployer);
 
+  console.log("Berries", Berries.address, "Deployment", deployer);
+
   await deploy("BerryLands", {
     // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
     from: deployer,
